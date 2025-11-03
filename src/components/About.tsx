@@ -14,8 +14,8 @@ export default function About() {
         <div className="max-w-3xl mx-auto">
           <div className="bg-gray-800 rounded-xl p-8 border border-gray-700">
             <p className="text-lg text-gray-300 leading-relaxed mb-6">
-              I'm a passionate Full Stack Developer with over 5 years of experience in building scalable web applications.
-              I specialize in modern JavaScript frameworks and have a strong foundation in software engineering principles.
+              I'm a passionate Full Stack Developer with over 2 years of experience in building scalable web applications.
+              I specialize in modern JavaScript frameworks.
             </p>
 
             <p className="text-lg text-gray-300 leading-relaxed mb-6">
@@ -25,13 +25,13 @@ export default function About() {
             </p>
 
             <p className="text-lg text-gray-300 leading-relaxed">
-              When I'm not coding, you can find me contributing to open-source projects, writing technical blogs,
+              When I'm not coding, you can find me contributing to open-source projects, writing technical blogs on linkedin,
               or exploring new technologies. I believe in continuous learning and sharing knowledge with the developer community.
             </p>
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8 pt-8 border-t border-gray-700">
               <div className="text-center">
-                <div className="text-3xl font-bold text-cyan-400 mb-2">5+</div>
+                <div className="text-3xl font-bold text-cyan-400 mb-2">1+</div>
                 <div className="text-sm text-gray-400">Years Experience</div>
               </div>
               <div className="text-center">
@@ -39,11 +39,11 @@ export default function About() {
                 <div className="text-sm text-gray-400">Projects Completed</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-cyan-400 mb-2">30+</div>
+                <div className="text-3xl font-bold text-cyan-400 mb-2">5+</div>
                 <div className="text-sm text-gray-400">Happy Clients</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-cyan-400 mb-2">15+</div>
+                <div className="text-3xl font-bold text-cyan-400 mb-2">10+</div>
                 <div className="text-sm text-gray-400">Technologies</div>
               </div>
             </div>

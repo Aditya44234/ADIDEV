@@ -1,10 +1,10 @@
-import { Github, Linkedin, Mail, ChevronDown } from 'lucide-react';
+import { Github, Linkedin, Mail, ChevronDown } from "lucide-react";
 
 export default function Hero() {
   const scrollToAbout = () => {
-    const element = document.getElementById('about');
+    const element = document.getElementById("about");
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -27,28 +27,46 @@ export default function Hero() {
           </h1>
 
           <p className="text-xl md:text-2xl text-gray-300 mb-4">
-            Full Stack Developer & Software Engineer
+            Full Stack Developer
           </p>
 
           <p className="text-lg text-gray-400 mb-8 max-w-2xl mx-auto">
-            Building elegant solutions to complex problems with modern technologies
+            Building elegant solutions to complex problems with modern
+            technologies
           </p>
 
           <div className="flex items-center justify-center gap-4 mb-12">
-            <a href="https://github.com/Aditya44234" target="_blank" rel="noopener noreferrer" className="p-3 bg-gray-800 hover:bg-cyan-500/20 hover:text-cyan-400 rounded-lg transition-all duration-300">
+            <a
+              href="https://github.com/Aditya44234"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-3 bg-gray-800 hover:bg-cyan-500/20 hover:text-cyan-400 rounded-lg transition-all duration-300"
+            >
               <Github className="w-6 h-6" />
             </a>
-            <a href="https://www.linkedin.com/in/aditya-joshi-115a6b308" target="_blank" rel="noopener noreferrer" className="p-3 bg-gray-800 hover:bg-cyan-500/20 hover:text-cyan-400 rounded-lg transition-all duration-300">
+            <a
+              href="https://www.linkedin.com/in/aditya-joshi-115a6b308"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-3 bg-gray-800 hover:bg-cyan-500/20 hover:text-cyan-400 rounded-lg transition-all duration-300"
+            >
               <Linkedin className="w-6 h-6" />
             </a>
-            <a href="mailto:aj6305897005@gmail.com" className="p-3 bg-gray-800 hover:bg-cyan-500/20 hover:text-cyan-400 rounded-lg transition-all duration-300">
+            <a
+              href="mailto:aj6305897005@gmail.com"
+              className="p-3 bg-gray-800 hover:bg-cyan-500/20 hover:text-cyan-400 rounded-lg transition-all duration-300"
+            >
               <Mail className="w-6 h-6" />
             </a>
           </div>
 
           <div className="flex items-center justify-center gap-4">
             <button
-              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+              onClick={() =>
+                document
+                  .getElementById("contact")
+                  ?.scrollIntoView({ behavior: "smooth" })
+              }
               className="px-8 py-3 bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105"
             >
               Get In Touch

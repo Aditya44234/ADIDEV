@@ -3,9 +3,8 @@ import { ExternalLink, Github } from "lucide-react";
 const projects = [
   {
     title: "AI Job Search and Analysis Platform",
-    description:
-      "A full-featured e-commerce platform with payment integration, inventory management, and admin dashboard.",
-    technologies: ["React", "Node.js", "Express.js", "Tailwind"],
+    description: "Smart career guidance and job insights powered by AI.",
+    technologies: ["React", "Node.js", "Express.js", "Tailwind", "chart.js"],
     image:
       "https://favourable-yellow-13g2avna7a.edgeone.app/WhatsApp%20Image%202025-11-03%20at%2012.37.17_c7a715f6.jpg",
     github: "https://github.com/Aditya44234/AI-Career-Guide.git",
@@ -14,8 +13,8 @@ const projects = [
   {
     title: "Notes App with CRUD & Backend",
     description:
-      "Real-time collaborative task management application with team workspaces and progress tracking.",
-    technologies: ["Next.js", "TypeScript", "MongoDB", "Socket.io", "Tailwind"],
+      "Organize notes efficiently—full stack support for create, read, update, delete.",
+    technologies: ["React.js", "javaScript", "MongoDB", "Tailwind"],
     image:
       "https://favourable-yellow-13g2avna7a.edgeone.app/WhatsApp%20Image%202025-11-03%20at%2012.38.28_2b7409de.jpg",
     github: "https://github.com/Aditya44234/Note-manager-app.git",
@@ -24,8 +23,8 @@ const projects = [
   {
     title: "ResuMentor",
     description:
-      "Data visualization dashboard with real-time metrics, custom reports, and data export functionality.",
-    technologies: ["Vue.js", "Express", "Chart.js", "Redis", "Docker"],
+      "Automatically generates interview quizzes from uploaded resumes using AI.",
+    technologies: ["React.js", "Express", "Tailwind CSS"],
     image:
       "https://favourable-yellow-13g2avna7a.edgeone.app/WhatsApp%20Image%202025-10-20%20at%2020.14.19_96f7f164.jpg",
     github: "https://github.com/Aditya44234/ResuMentor.git",
@@ -33,9 +32,8 @@ const projects = [
   },
   {
     title: "Landing Page for Edutech Platform",
-    description:
-      "RESTful API for a social media platform with authentication, posts, comments, and real-time notifications.",
-    technologies: ["Node.js", "GraphQL", "PostgreSQL", "JWT", "WebSocket"],
+    description: " Conversion-focused landing page for IELTS test preparation.",
+    technologies: ["React.js", "Tailwind CSS", "Framer Motion"],
     image:
       "https://favourable-yellow-13g2avna7a.edgeone.app/WhatsApp%20Image%202025-11-03%20at%2012.41.52_cdfeb423.jpg",
     github: "https://github.com/Aditya44234/IELTS-homepage.git",
@@ -44,8 +42,8 @@ const projects = [
   {
     title: "Speech to Text Generator",
     description:
-      "Content management system for creating and managing portfolio websites with drag-and-drop interface.",
-    technologies: ["React", "Python", "Django", "SQLite", "S3"],
+      "Real-time speech transcription for fast and accurate note-taking.",
+    technologies: ["React", "React Speech Recognition", "Tailwind CSS"],
     image:
       "https://favourable-yellow-13g2avna7a.edgeone.app/WhatsApp%20Image%202025-11-03%20at%2012.43.13_a746e313.jpg",
     github: "https://github.com/Aditya44234/SpeechTotext.git",
@@ -54,8 +52,14 @@ const projects = [
   {
     title: "Firebase Auth Journal App",
     description:
-      "Online booking and scheduling system with calendar integration, notifications, and payment processing.",
-    technologies: ["Next.js", "Supabase", "Stripe", "Vercel", "Tailwind"],
+      "A cloud-based journal platform with real-time synchronization and authentication.",
+    technologies: [
+      "React",
+      "Firebase",
+      "Firestore",
+      "Google",
+      "Authentication",
+    ],
     image:
       "https://favourable-yellow-13g2avna7a.edgeone.app/WhatsApp%20Image%202025-11-03%20at%2012.44.07_720a1b3c.jpg",
     github: "https://github.com/Aditya44234/Journal-App.git",
