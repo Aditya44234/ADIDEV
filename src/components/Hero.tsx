@@ -16,13 +16,13 @@ export default function Hero() {
         <div className="text-center">
           <div className="mb-8 inline-block">
             <div className="w-32 h-32 rounded-full bg-gradient-to-br from-cyan-400 to-blue-500 flex items-center justify-center text-4xl font-bold">
-              JD
+              AJ
             </div>
           </div>
 
           <h1 className="text-5xl md:text-7xl font-bold mb-4">
             <span className="bg-gradient-to-r from-cyan-400 to-blue-500 text-transparent bg-clip-text">
-              John Doe
+              Aditya Joshi
             </span>
           </h1>
 
@@ -35,13 +35,13 @@ export default function Hero() {
           </p>
 
           <div className="flex items-center justify-center gap-4 mb-12">
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="p-3 bg-gray-800 hover:bg-cyan-500/20 hover:text-cyan-400 rounded-lg transition-all duration-300">
+            <a href="https://github.com/Aditya44234" target="_blank" rel="noopener noreferrer" className="p-3 bg-gray-800 hover:bg-cyan-500/20 hover:text-cyan-400 rounded-lg transition-all duration-300">
               <Github className="w-6 h-6" />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="p-3 bg-gray-800 hover:bg-cyan-500/20 hover:text-cyan-400 rounded-lg transition-all duration-300">
+            <a href="https://www.linkedin.com/in/aditya-joshi-115a6b308" target="_blank" rel="noopener noreferrer" className="p-3 bg-gray-800 hover:bg-cyan-500/20 hover:text-cyan-400 rounded-lg transition-all duration-300">
               <Linkedin className="w-6 h-6" />
             </a>
-            <a href="mailto:john@example.com" className="p-3 bg-gray-800 hover:bg-cyan-500/20 hover:text-cyan-400 rounded-lg transition-all duration-300">
+            <a href="mailto:aj6305897005@gmail.com" className="p-3 bg-gray-800 hover:bg-cyan-500/20 hover:text-cyan-400 rounded-lg transition-all duration-300">
               <Mail className="w-6 h-6" />
             </a>
           </div>
@@ -66,9 +66,9 @@ export default function Hero() {
 
       <button
         onClick={scrollToAbout}
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce"
+        className="absolute bottom-1 left-1/2 transform -translate-x-1/2 animate-bounce"
       >
-        <ChevronDown className="w-8 h-8 text-cyan-400" />
+        <ChevronDown className="w-10 h-10 text-cyan-400" />
       </button>
     </section>
   );

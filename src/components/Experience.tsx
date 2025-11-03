@@ -1,32 +1,11 @@
 import { Briefcase } from 'lucide-react';
 
 const experiences = [
-  {
-    title: 'Senior Full Stack Developer',
-    company: 'Tech Innovations Inc.',
-    period: '2022 - Present',
-    description: 'Leading development of enterprise-level web applications using React, Node.js, and AWS. Mentoring junior developers and implementing best practices for code quality and performance.',
-    achievements: [
-      'Architected and deployed microservices reducing response time by 40%',
-      'Led a team of 5 developers in building a customer portal serving 100k+ users',
-      'Implemented CI/CD pipeline reducing deployment time by 60%',
-    ],
-  },
-  {
-    title: 'Full Stack Developer',
-    company: 'Digital Solutions Ltd.',
-    period: '2020 - 2022',
-    description: 'Developed and maintained multiple client projects using modern web technologies. Collaborated with cross-functional teams to deliver high-quality solutions.',
-    achievements: [
-      'Built RESTful APIs serving 50k+ daily requests',
-      'Improved application performance by 35% through code optimization',
-      'Successfully delivered 15+ projects on time and within budget',
-    ],
-  },
+
   {
     title: 'Junior Web Developer',
-    company: 'StartUp Ventures',
-    period: '2019 - 2020',
+    company: 'Briha AI',
+    period: 'Aug-2025 to Nov-2025',
     description: 'Contributed to front-end and back-end development of various web applications. Gained experience in modern development workflows and agile methodologies.',
     achievements: [
       'Developed responsive UI components used across multiple projects',

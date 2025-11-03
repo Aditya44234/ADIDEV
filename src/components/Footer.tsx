@@ -19,7 +19,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           <div>
-            <h3 className="text-xl font-bold mb-4 text-cyan-400">DevPortfolio</h3>
+            <h3 className="text-xl font-bold mb-4 text-cyan-400">ADIDEV</h3>
             <p className="text-gray-400 leading-relaxed">
               Building the future, one line of code at a time. Let's create something amazing together.
             </p>
@@ -96,12 +96,12 @@ export default function Footer() {
             <div className="flex items-center gap-2 text-gray-400">
               <span>Made with</span>
               <Heart className="w-4 h-4 text-red-500 fill-current" />
-              <span>by John Doe</span>
+              <span>by Aditya Joshi</span>
             </div>
 
             <div className="flex items-center gap-4">
               <a
-                href="https://github.com"
+                href="https://github.com/Aditya44234"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-cyan-400 transition-colors"
@@ -109,7 +109,7 @@ export default function Footer() {
                 <Github className="w-5 h-5" />
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/aditya-joshi-115a6b308"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-cyan-400 transition-colors"
@@ -117,7 +117,7 @@ export default function Footer() {
                 <Linkedin className="w-5 h-5" />
               </a>
               <a
-                href="mailto:john@example.com"
+                href="mailto:aj6305897005@gmail.com"
                 className="text-gray-400 hover:text-cyan-400 transition-colors"
               >
                 <Mail className="w-5 h-5" />

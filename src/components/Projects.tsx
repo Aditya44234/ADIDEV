@@ -1,53 +1,65 @@
-import { ExternalLink, Github } from 'lucide-react';
+import { ExternalLink, Github } from "lucide-react";
 
 const projects = [
   {
-    title: 'E-Commerce Platform',
-    description: 'A full-featured e-commerce platform with payment integration, inventory management, and admin dashboard.',
-    technologies: ['React', 'Node.js', 'PostgreSQL', 'Stripe', 'AWS'],
-    image: 'https://images.pexels.com/photos/6214477/pexels-photo-6214477.jpeg?auto=compress&cs=tinysrgb&w=800',
-    github: 'https://github.com',
-    live: 'https://example.com',
+    title: "AI Job Search and Analysis Platform",
+    description:
+      "A full-featured e-commerce platform with payment integration, inventory management, and admin dashboard.",
+    technologies: ["React", "Node.js", "Express.js", "Tailwind"],
+    image:
+      "https://favourable-yellow-13g2avna7a.edgeone.app/WhatsApp%20Image%202025-11-03%20at%2012.37.17_c7a715f6.jpg",
+    github: "https://github.com/Aditya44234/AI-Career-Guide.git",
+    live: "https://ai-career-guide-jet.vercel.app",
   },
   {
-    title: 'Task Management App',
-    description: 'Real-time collaborative task management application with team workspaces and progress tracking.',
-    technologies: ['Next.js', 'TypeScript', 'MongoDB', 'Socket.io', 'Tailwind'],
-    image: 'https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg?auto=compress&cs=tinysrgb&w=800',
-    github: 'https://github.com',
-    live: 'https://example.com',
+    title: "Notes App with CRUD & Backend",
+    description:
+      "Real-time collaborative task management application with team workspaces and progress tracking.",
+    technologies: ["Next.js", "TypeScript", "MongoDB", "Socket.io", "Tailwind"],
+    image:
+      "https://favourable-yellow-13g2avna7a.edgeone.app/WhatsApp%20Image%202025-11-03%20at%2012.38.28_2b7409de.jpg",
+    github: "https://github.com/Aditya44234/Note-manager-app.git",
+    live: " https://note-manager-app-henna.vercel.app",
   },
   {
-    title: 'Analytics Dashboard',
-    description: 'Data visualization dashboard with real-time metrics, custom reports, and data export functionality.',
-    technologies: ['Vue.js', 'Express', 'Chart.js', 'Redis', 'Docker'],
-    image: 'https://images.pexels.com/photos/7567443/pexels-photo-7567443.jpeg?auto=compress&cs=tinysrgb&w=800',
-    github: 'https://github.com',
-    live: 'https://example.com',
+    title: "ResuMentor",
+    description:
+      "Data visualization dashboard with real-time metrics, custom reports, and data export functionality.",
+    technologies: ["Vue.js", "Express", "Chart.js", "Redis", "Docker"],
+    image:
+      "https://favourable-yellow-13g2avna7a.edgeone.app/WhatsApp%20Image%202025-10-20%20at%2020.14.19_96f7f164.jpg",
+    github: "https://github.com/Aditya44234/ResuMentor.git",
+    live: "https://resu-mentor.vercel.app ",
   },
   {
-    title: 'Social Media API',
-    description: 'RESTful API for a social media platform with authentication, posts, comments, and real-time notifications.',
-    technologies: ['Node.js', 'GraphQL', 'PostgreSQL', 'JWT', 'WebSocket'],
-    image: 'https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=800',
-    github: 'https://github.com',
-    live: 'https://example.com',
+    title: "Landing Page for Edutech Platform",
+    description:
+      "RESTful API for a social media platform with authentication, posts, comments, and real-time notifications.",
+    technologies: ["Node.js", "GraphQL", "PostgreSQL", "JWT", "WebSocket"],
+    image:
+      "https://favourable-yellow-13g2avna7a.edgeone.app/WhatsApp%20Image%202025-11-03%20at%2012.41.52_cdfeb423.jpg",
+    github: "https://github.com/Aditya44234/IELTS-homepage.git",
+    live: "https://ielts-dev.vercel.app",
   },
   {
-    title: 'Portfolio CMS',
-    description: 'Content management system for creating and managing portfolio websites with drag-and-drop interface.',
-    technologies: ['React', 'Python', 'Django', 'SQLite', 'S3'],
-    image: 'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800',
-    github: 'https://github.com',
-    live: 'https://example.com',
+    title: "Speech to Text Generator",
+    description:
+      "Content management system for creating and managing portfolio websites with drag-and-drop interface.",
+    technologies: ["React", "Python", "Django", "SQLite", "S3"],
+    image:
+      "https://favourable-yellow-13g2avna7a.edgeone.app/WhatsApp%20Image%202025-11-03%20at%2012.43.13_a746e313.jpg",
+    github: "https://github.com/Aditya44234/SpeechTotext.git",
+    live: "https://speech-totext-henna.vercel.app",
   },
   {
-    title: 'Booking System',
-    description: 'Online booking and scheduling system with calendar integration, notifications, and payment processing.',
-    technologies: ['Next.js', 'Supabase', 'Stripe', 'Vercel', 'Tailwind'],
-    image: 'https://images.pexels.com/photos/5439492/pexels-photo-5439492.jpeg?auto=compress&cs=tinysrgb&w=800',
-    github: 'https://github.com',
-    live: 'https://example.com',
+    title: "Firebase Auth Journal App",
+    description:
+      "Online booking and scheduling system with calendar integration, notifications, and payment processing.",
+    technologies: ["Next.js", "Supabase", "Stripe", "Vercel", "Tailwind"],
+    image:
+      "https://favourable-yellow-13g2avna7a.edgeone.app/WhatsApp%20Image%202025-11-03%20at%2012.44.07_720a1b3c.jpg",
+    github: "https://github.com/Aditya44234/Journal-App.git",
+    live: "https://journal-app-seven-nu.vercel.app",
   },
 ];
 
@@ -66,7 +78,7 @@ export default function Projects() {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="bg-gray-800 rounded-xl overflow-hidden border border-gray-700 hover:border-cyan-500/50 transition-all duration-300 hover:transform hover:scale-105"
+              className="bg-gray-800 cursor-pointer rounded-xl overflow-hidden border border-cyan-400 hover:border-cyan-500/50 transition-all duration-300 hover:transform hover:border-2xl   hover:scale-105"
             >
               <div className="relative h-48 overflow-hidden">
                 <img
@@ -78,8 +90,12 @@ export default function Projects() {
               </div>
 
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-2 text-cyan-400">{project.title}</h3>
-                <p className="text-gray-300 mb-4 line-clamp-3">{project.description}</p>
+                <h3 className="text-xl font-bold mb-2 text-cyan-400">
+                  {project.title}
+                </h3>
+                <p className="text-gray-300 mb-4 line-clamp-3">
+                  {project.description}
+                </p>
 
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.technologies.map((tech, idx) => (
