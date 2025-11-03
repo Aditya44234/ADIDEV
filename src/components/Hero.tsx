@@ -31,8 +31,7 @@ export default function Hero() {
           </p>
 
           <p className="text-lg text-gray-400 mb-8 max-w-2xl mx-auto">
-            Building elegant solutions to complex problems with modern
-            technologies
+            Creating websites that look cool and work great!
           </p>
 
           <div className="flex items-center justify-center gap-4 mb-12">
