@@ -1,4 +1,4 @@
-import { User } from 'lucide-react';
+import { User } from "lucide-react";
 
 export default function About() {
   return (
@@ -14,19 +14,25 @@ export default function About() {
         <div className="max-w-3xl mx-auto">
           <div className="bg-gray-800 rounded-xl p-8 border border-gray-700">
             <p className="text-lg text-gray-300 leading-relaxed mb-6">
-              I'm a passionate Full Stack Developer with over 2 years of experience in building scalable web applications.
-              I specialize in modern JavaScript frameworks.
+              I’m a passionate Full Stack Developer with over one year of
+              experience building scalable and high-performance web
+              applications. I specialize in modern JavaScript frameworks and
+              enjoy creating clean, efficient, and user-focused solutions.
+              Currently, I work as a Full Stack Developer at SigmaValue.
             </p>
 
             <p className="text-lg text-gray-300 leading-relaxed mb-6">
-              My journey in software development started with a curiosity about how things work under the hood.
-              This curiosity has driven me to constantly learn and adapt to new technologies, always striving to write
-              clean, efficient, and maintainable code.
+              My journey in software development started with a curiosity about
+              how things work under the hood. This curiosity has driven me to
+              constantly learn and adapt to new technologies, always striving to
+              write clean, efficient, and maintainable code.
             </p>
 
             <p className="text-lg text-gray-300 leading-relaxed">
-              When I'm not coding, you can find me contributing to open-source projects, writing technical blogs on linkedin,
-              or exploring new technologies. I believe in continuous learning and sharing knowledge with the developer community.
+              When I'm not coding, you can find me contributing to open-source
+              projects, writing technical blogs on linkedin, or exploring new
+              technologies. I believe in continuous learning and sharing
+              knowledge with the developer community.
             </p>
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8 pt-8 border-t border-gray-700">

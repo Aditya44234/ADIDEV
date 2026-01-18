@@ -8,6 +8,7 @@ const skillCategories = [
       { name: 'HTML, CSS, Typescript', level: 90 },
       { name: 'Redux', level: 85 },
       { name: 'Next.js', level: 85 },
+      { name: 'Bootstrap', level: 80 },
       { name: 'Tailwind CSS', level: 90 },
     ],
   },
@@ -16,11 +17,10 @@ const skillCategories = [
     skills: [
       { name: 'Node.js', level: 90 },
       { name: 'Express', level: 85 },
-      { name: 'Python', level: 80 },
+      { name: 'Django', level:70 },
       { name: 'MongoDB', level: 80 },
       { name: 'REST APIs', level: 80 },
       { name: 'Firebase', level: 80 },
-      { name: 'Firestore', level: 80 },
     ],
   },
   {
@@ -38,7 +38,6 @@ const skillCategories = [
     skills: [
       { name: 'REST API', level: 95 },
       { name: 'Google Gemini API (AI Integration)', level: 85 },
-      { name: 'UI/UX', level: 75 },
       { name: 'Context API-based state management', level: 65 },
       { name: 'Problem Solving, Adaptability', level: 65 },
       { name: 'Self-learning (Soft Skills)', level: 75 },

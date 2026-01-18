@@ -96,7 +96,7 @@ export default function Footer() {
             <div className="flex items-center gap-2 text-gray-400">
               <span>Made with</span>
               <Heart className="w-4 h-4 text-red-500 fill-current" />
-              <span>by Aditya Joshi</span>
+              <span>by Aditya Joshi & BOLT</span>
             </div>
 
             <div className="flex items-center gap-4">

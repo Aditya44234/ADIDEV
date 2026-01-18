@@ -1,6 +1,23 @@
 import { ExternalLink, Github } from "lucide-react";
+import ajai from "/ajai.png";
+import marketlens from "/marketlens.png";
 
 const projects = [
+  {
+    title: "AJAI – AI Chat Assistant",
+    description:
+      "A high-performance AI chat application delivering real-time conversations with ultra-fast responses using the Groq API, featuring smart code detection, one-click code copy, and a sleek responsive interface.",
+    technologies: [
+      "Next.js",
+      "React",
+      "Tailwind CSS",
+      "Groq API",
+      "TypeScript",
+    ],
+    image: ajai,
+    github: "https://github.com/Aditya44234/AJAI.git",
+    live: "https://ajai-seven.vercel.app/",
+  },
   {
     title: "AI Job Search and Analysis Platform",
     description: "Smart career guidance and job insights powered by AI.",
@@ -10,6 +27,27 @@ const projects = [
     github: "https://github.com/Aditya44234/AI-Career-Guide.git",
     live: "https://ai-career-guide-jet.vercel.app",
   },
+  {
+    title: "MarketLens.ai – AI-Powered Market Analytics",
+    description:
+      "An AI-powered market analytics platform that transforms raw real-estate Excel data into actionable insights. Built with a Django backend and powered by the Gemini API, the app allows users to ask natural language questions and instantly receive intelligent summaries, interactive charts, key statistics, comparison tables, and downloadable PDF reports through a clean, responsive interface.",
+    technologies: [
+      "React",
+      "Tailwind CSS",
+      "React Query",
+      "React Router",
+      "Django",
+      "Gemini API",
+      "Chart.js",
+      "jsPDF",
+      "html2canvas",
+      "Vercel",
+    ],
+    image: marketlens, 
+    github: "https://github.com/Aditya44234/marketLens.ai.git",
+    live: "https://market-lens-ai.vercel.app/",
+  },
+
   {
     title: "Notes App with CRUD & Backend",
     description:

@@ -13,6 +13,20 @@ const experiences = [
       "Enhanced debugging, optimized frontend performance, and leveraged AI tools for faster development",
     ],
   },
+  {
+    title: "Full Stack Developer",
+    company: "SigmaValue",
+    period: "Dec-2025 to Present",
+    description:
+      "Working on a production-grade web application focused on property valuation and data analytics, contributing primarily to frontend development while integrating with backend APIs and business logic.",
+    achievements: [
+      "Developed and maintained complex React components including dashboardand data-driven pages and property sale data modules",
+      "Implemented responsive layouts, semantic HTML, and optimized UI/UX across devices using Bootstrap and custom styling",
+      "Handled form validation, keyboard interactions, routing, and state management to improve user experience and application reliability",
+      "Collaborated with the team using GitHub for version control, branching, pull requests, and code reviews in a real-world development workflow . Understanding the git at production level is a big plus",
+      "Debugged production issues, refactored existing code, and improved frontend performance and maintainability",
+    ],
+  },
 ];
 
 export default function Experience() {
