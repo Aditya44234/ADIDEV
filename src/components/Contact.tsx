@@ -1,23 +1,78 @@
-import { useState } from 'react';
+import { type ChangeEvent, type FormEvent, useState } from 'react';
 import { Mail, MessageSquare, Send } from 'lucide-react';
 
+const CONTACT_EMAIL = 'aj6305897005@gmail.com';
+const FORM_ENDPOINT = `https://formsubmit.co/ajax/${CONTACT_EMAIL}`;
+
+type FormState = {
+  name: string;
+  email: string;
+  message: string;
+};
+
+type StatusState =
+  | {
+      type: 'success' | 'error';
+      message: string;
+    }
+  | null;
+
 export default function Contact() {
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState<FormState>({
     name: '',
     email: '',
     message: '',
   });
+  const [status, setStatus] = useState<StatusState>(null);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const [status, setStatus] = useState('');
-
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setStatus('Message sent successfully!');
-    setFormData({ name: '', email: '', message: '' });
-    setTimeout(() => setStatus(''), 3000);
+
+    setIsSubmitting(true);
+    setStatus(null);
+
+    try {
+      const response = await fetch(FORM_ENDPOINT, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
+        body: JSON.stringify({
+          ...formData,
+          _replyto: formData.email,
+          _subject: `Portfolio message from ${formData.name}`,
+          _template: 'table',
+          _honey: '',
+        }),
+      });
+
+      const result = await response.json();
+
+      if (!response.ok) {
+        throw new Error(result.message || 'Message could not be sent right now.');
+      }
+
+      setStatus({
+        type: 'success',
+        message: 'Message sent successfully. It has been delivered to my inbox.',
+      });
+      setFormData({ name: '', email: '', message: '' });
+    } catch (error) {
+      setStatus({
+        type: 'error',
+        message:
+          error instanceof Error
+            ? error.message
+            : 'Something went wrong while sending your message.',
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
@@ -46,11 +101,16 @@ export default function Contact() {
               <div className="space-y-4">
                 <div className="flex items-center gap-3 text-gray-300">
                   <Mail className="w-5 h-5 text-cyan-400" />
-                  <span>adityajoshi4002@gmail.com</span>
+                  <a
+                    href={`mailto:${CONTACT_EMAIL}`}
+                    className="transition-colors hover:text-cyan-400"
+                  >
+                    {CONTACT_EMAIL}
+                  </a>
                 </div>
                 <div className="flex items-center gap-3 text-gray-300">
                   <MessageSquare className="w-5 h-5 text-cyan-400" />
-                  <span>Available for freelance work</span>
+                  <span>Real-time inbox contact enabled</span>
                 </div>
               </div>
 
@@ -111,15 +171,23 @@ export default function Contact() {
                 </div>
 
                 {status && (
-                  <div className="text-green-400 text-sm">{status}</div>
+                  <div
+                    aria-live="polite"
+                    className={`text-sm ${
+                      status.type === 'success' ? 'text-green-400' : 'text-red-400'
+                    }`}
+                  >
+                    {status.message}
+                  </div>
                 )}
 
                 <button
                   type="submit"
-                  className="w-full flex items-center justify-center gap-2 px-6 py-3 bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105"
+                  disabled={isSubmitting}
+                  className="w-full flex items-center justify-center gap-2 px-6 py-3 bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 disabled:cursor-not-allowed disabled:scale-100 disabled:opacity-70"
                 >
                   <Send className="w-5 h-5" />
-                  Send Message
+                  {isSubmitting ? 'Sending...' : 'Send Message'}
                 </button>
               </form>
             </div>

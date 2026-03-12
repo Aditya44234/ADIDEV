@@ -1,8 +1,28 @@
 import { ExternalLink, Github } from "lucide-react";
 import ajai from "/ajai.png";
+import ajai20 from "/ajai20.png";
 import marketlens from "/marketlens.png";
 
 const projects = [
+  {
+    title: "AJAI 2.0 – Production level chatbot",
+    description: `Full-stack Next.js AI chatbot platform.
+
+JWT auth/guest users, persistent sessions, multi-model AI (Gemini 2.5 Flash + Groq Llama fallback).
+
+Rate limiting, context memory, auto-title, secure ownership.`,
+    technologies: [
+      "Next.js",
+      "React",
+      "Tailwind CSS",
+      "Gemini API",
+      "Groq API",
+      "TypeScript",
+    ],
+    image: ajai20,
+    github: "https://github.com/Aditya44234/AJAI_2_0",
+    live: "https://ajai20.vercel.app/",
+  },
   {
     title: "AJAI – AI Chat Assistant",
     description:
@@ -43,7 +63,7 @@ const projects = [
       "html2canvas",
       "Vercel",
     ],
-    image: marketlens, 
+    image: marketlens,
     github: "https://github.com/Aditya44234/marketLens.ai.git",
     live: "https://market-lens-ai.vercel.app/",
   },

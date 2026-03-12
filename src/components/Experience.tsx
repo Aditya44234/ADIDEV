@@ -2,7 +2,7 @@ import { Briefcase } from "lucide-react";
 
 const experiences = [
   {
-    title: "Junior Web Developer",
+    title: "Junior Web Developer intern" ,
     company: "Brihas AI",
     period: "Aug-2025 to Nov-2025",
     description:
@@ -14,9 +14,9 @@ const experiences = [
     ],
   },
   {
-    title: "Full Stack Developer",
+    title: "Full Stack Developer intern",
     company: "SigmaValue",
-    period: "Dec-2025 to Present",
+    period: "Dec-2025 to Mar-2026",
     description:
       "Working on a production-grade web application focused on property valuation and data analytics, contributing primarily to frontend development while integrating with backend APIs and business logic.",
     achievements: [
